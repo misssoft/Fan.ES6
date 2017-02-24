@@ -1,0 +1,17 @@
+{
+  "name": "selfdrive",
+  "version": "1.0.0",
+  "description": "Learning ES 6 following pluralsight course:\r https://app.pluralsight.com/library/courses/javascript-es6-object-oriented-programming/exercise-files",
+  "main": "index.js",
+  "dependencies": {
+    "es6-module-loader": "^0.17.11",
+    "traceur": "0.0.108"
+  },
+  "devDependencies": {
+    "lite-server": "^2.2.2"
+  },
+  "scripts": {
+    "test": "test",
+    "dev": "lite-server"
+  } 
+}

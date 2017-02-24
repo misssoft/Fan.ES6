@@ -13,14 +13,30 @@ console.log(dataService.cars);
 console.log(dataService.lorries);
 
 for(let car of dataService.cars){
-    console.log('this is car: ' + car.licenseNumber);
+    console.log(car);
 }
 
+let car = dataService.getVehicleByLicense('DEF123');
+console.log(car);
+
 for(let lorry of dataService.lorries){
-    console.log('this is lorry: ' + lorry.licenseNumber);
+    console.log(lorry);
 }
 
 for(let error of dataService.errors){
-    console.log('An error occurred: ' +  error.message );
+    console.log(error);
+}
+
+let sortedLorries = dataService.sortLorrisByLicense();
+
+for(let lorry of sortedLorries){
+    console.log(lorry);
+}
+
+
+let sortedVehicles = dataService.sortVehicleByLicense();
+
+for(let v of sortedVehicles){
+    console.log(v);
 }
 

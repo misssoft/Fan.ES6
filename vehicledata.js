@@ -25,5 +25,10 @@ export let vehicles = [
         license: 'MNO123',
         type:'cars',
         model:'Jaguar'
+    },
+    {
+        license: 'ABB123',
+        type:'lorry',
+        model:'Jaguar'
     }
 ]

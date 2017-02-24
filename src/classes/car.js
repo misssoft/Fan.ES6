@@ -1,8 +1,8 @@
 import {Vehicle} from './vehicle.js';
 
 export class Car extends Vehicle{
-    constructor(licenseNumber){
-        super(licenseNumber);
+    constructor(licenseNumber, model){
+        super(licenseNumber, model);
         console.log('Car constructed');
         this.gpsEnabled = false;
     }

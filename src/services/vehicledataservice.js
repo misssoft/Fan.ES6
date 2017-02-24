@@ -10,6 +10,10 @@ export class VehicleDataService{
         this.vehicles = []
     }
 
+    filterByModel(filter){
+        return this.vehicles.filter(v=>v.model.indexOf(filter) >=0);
+    }
+    
     getVehicleByLicense(license){
         return this.cars.find(function(car){
             return car.licenseNumber == license;

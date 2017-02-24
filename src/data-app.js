@@ -40,3 +40,8 @@ for(let v of sortedVehicles){
     console.log(v);
 }
 
+let filteredVehicles = dataService.filterByModel('M');
+
+for (let v of filteredVehicles){
+    console.log(v);
+}

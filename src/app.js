@@ -2,7 +2,6 @@ import {Drone} from './classes/drone.js';
 import {Car} from './classes/car.js';
 import {Lorry} from './classes/lorry.js';
 
-
 //class, object, instance
 let drone = new Drone("DroneID", "DroneName")
 console.log('Drone is a type of '+ typeof Drone);

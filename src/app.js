@@ -1,26 +1,7 @@
-class Drone{
-    constructor(id, name){
-        this.id = id;
-        this.name = name;
-        this._code = this.id+'_'+this.name;
-    }
+import {Drone} from './classes/drone.js';
+import {Car} from './classes/car.js';
+import {Lorry} from './classes/lorry.js';
 
-    get code(){
-        return this._code;
-    }
-
-    set code(value){
-        this._code = value;
-    }
-
-    static getSpeed(){
-        console.log('MaxSpeed of all drones are ' + this.MaxSpeed);
-    }
-
-    fly(){
-        console.log('Drone: ' + this.id + ' is flying');
-    }
-}
 
 //class, object, instance
 let drone = new Drone("DroneID", "DroneName")
@@ -56,3 +37,16 @@ speeder.code = 'I_AM_SPEEDER';
 
 console.log('this drone code is ' + sharper.code);
 console.log('this drone code is ' + speeder.code);
+
+//Inheritance
+let smallCar  = new Car("YUP2010");
+
+//child class constructor has to call super first
+console.log(smallCar.licenseNumber);
+console.log(smallCar.gpsEnabled);
+
+//child class method can override parent
+smallCar.start();
+
+//static method
+Car.gePetrolPrice();
